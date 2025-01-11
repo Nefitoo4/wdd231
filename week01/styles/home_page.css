@@ -231,6 +231,12 @@ nav a:hover {
   background-color: #750303;
 }
 
+#total_credits {
+  font-family: var(--secondary-font);
+  color: var(--secondary-color);
+  text-align: center;
+  margin: 1rem;
+}
 footer {
   background-color: var(--primary-color);
   color: var(--fifth-color);
