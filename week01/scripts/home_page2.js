@@ -6,7 +6,7 @@ function filterCourses(category) {
   courses.forEach((course) => {
     if (category === "all") {
       course.style.display = "flex";
-      visibleCourses++;
+      visibleCourses++; //sum the credits
     } else if (course.classList.contains(category)) {
       course.style.display = "flex";
       visibleCourses++;
@@ -15,7 +15,7 @@ function filterCourses(category) {
     }
   });
 
-  const totalCredits = visibleCourses * 2;
+  const totalCredits = visibleCourses * 2; //multiply the amount of each credit
   document.getElementById(
     "total_credits"
   ).textContent = `The total number of credits for the courses listed below is: ${totalCredits}`;
