@@ -4,6 +4,12 @@
   --third-color: #000;
   --forth-color: rgb(112, 3, 3);
   --fifth-color: white;
+  --main-font: "Monserrat", sans-serif;
+  --secondary-font: "Playwrite AU SA", cursive;
+}
+
+body {
+  font-family: var(--main-font);
 }
 
 * {
@@ -31,6 +37,11 @@ h1 {
   color: var(--fifth-color);
   text-align: center;
   margin: 10px;
+  font-family: var(--secondary-font);
+}
+
+h2 {
+  font-family: var(--secondary-font);
 }
 
 nav {
