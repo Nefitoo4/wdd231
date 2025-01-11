@@ -1,0 +1,44 @@
+@media only screen and (min-width: 768px) {
+  .home_page {
+    flex: 1 1 calc(50% - 1rem);
+  }
+  #ham_menu {
+    display: none;
+  }
+  .menu a {
+    display: block;
+    text-align: center;
+    flex: 1;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-links {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home_page {
+    flex: 1 1 calc(33.33% - 1rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .course_cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .course_card,
+  .course_card_pend {
+    flex: 1 1 100%;
+    max-width: 95%;
+    padding: 0.5rem 1rem;
+  }
+}

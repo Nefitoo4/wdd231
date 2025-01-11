@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nefi Zaldana - WDD231 Web FrontEnd Development I"
+    />
+    <meta name="author" content="Nefi Alberto Zaldana" />
+    <link rel="stylesheet" href="week01/styles/home_page.css" />
+    <link rel="stylesheet" href="week01/styles/large_home_page.css" />
+    <script src="week01/scripts/home_page.js" defer></script>
+    <title>Course Home Page</title>
+  </head>
+  <body>
+    <!--HEADER SECTION-->
+    <header>
+      <div class="profile_container">
+        <img
+          src="week01/images/cv.webp"
+          width="70"
+          height="80"
+          class="photo_profile"
+        />
+        <h1>Nefi A. Zaldana</h1>
+      </div>
+    </header>
+
+    <!--NAVIGATION MENU SECTION-->
+    <nav class="menu">
+      <button id="ham_menu" tittle="navigation menu"></button>
+      <div class="menu-links">
+        <a>Home</a>
+        <a>Chamber</a>
+        <a href="https://github.com/Nefitoo4">GitHub Profile</a>
+        <a href="https://www.linkedin.com/in/nefi-zalda%C3%B1a-477a38256/"
+          >LinkedIn</a
+        >
+      </div>
+    </nav>
+    <main>
+      <!--COURSE WORK SECTION-->
+      <div id="sections_flex">
+        <section class="home_page">
+          <h2 class="header_content">Course Work</h2>
+          <div id="course_tasks">
+            <ul class="task_list">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </section>
+
+        <!--COUNTRY SECTION-->
+        <section class="home_page">
+          <h2 class="header_content">Santa Tecla, El Salvador</h2>
+          <div id="section_content">
+            <img
+              src="week01/images/town_hall.jpg"
+              alt="santa tecla, town hall"
+            />
+            <p class="div_content">Town Hall, Santa Tecla</p>
+          </div>
+        </section>
+      </div>
+
+      <!--WDD CERTIFICATE SECTION-->
+      <section id="home_page">
+        <h2 class="header_content">Web and Computer Programming Certificate</h2>
+        <div class="filter_buttons">
+          <button class="filter_btn" onclick="filterCourses('all')">All</button>
+          <button class="filter_btn" onclick="filterCourses('CSE')">CSE</button>
+          <button class="filter_btn" onclick="filterCourses('WDD')">WDD</button>
+          <hr />
+        </div>
+        <div class="course_cards">
+          <div class="course_card CSE">CSE 110</div>
+          <div class="course_card WDD">WDD 130</div>
+          <div class="course_card CSE">CSE 111</div>
+          <div class="course_card CSE">CSE 210</div>
+          <div class="course_card WDD">WDD 131</div>
+          <div class="course_card_pend WDD">WDD 231</div>
+        </div>
+      </section>
+
+      <!--FOOTER SECTION-->
+      <footer>
+        <div class="footer_div">
+          <span id="currentyear"
+            >&copy; 2025 | Nefi Alberto Zaldana | El Salvador</span
+          >
+          <img
+            src="week01/images/bandera-de-el-salvador.jpg"
+            width="60"
+            height="40"
+            id="flag"
+          />
+          <p id="lastModified">Last Modification:</p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
