@@ -231,6 +231,7 @@ nav a:hover {
   background-color: #750303;
 }
 
+/*--total credits--*/
 #total_credits {
   font-family: var(--secondary-font);
   color: var(--secondary-color);
