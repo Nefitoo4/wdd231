@@ -117,7 +117,7 @@ nav a:hover {
 }
 
 .menu.open {
-  display: blocks;
+  display: block;
 }
 
 .header_content {

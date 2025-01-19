@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Kelly Supermarket",
+    "address": "3110 NE Apple Tree St, San Francisco CA",
+    "phone": "+18001123700",
+    "website": "www.kellysupermarket.com",
+    "image": "chamber/images/market.svg",
+    "membership": "Non for Profit",
+    "rating": 4.6
+  },
+  {
+    "name": "Smith Jewelry",
+    "address": "1112 NW 163 St, San Francisco CA",
+    "phone": "+180050338876",
+    "website": "smithjewelry.com",
+    "image": "chamber/images/jewelry.svg",
+    "membership": "Non for Profit",
+    "rating": 4.0
+  },
+  {
+    "name": "Frank Auto Parts",
+    "address": "3648 George Avenue, San Francisco CA",
+    "phone": "+180088889999",
+    "website": "www.frankautoparts.com",
+    "image": "chamber/images/mecanic.svg",
+    "membership": "gold",
+    "rating": 4.8
+  },
+  {
+    "name": "Luigi's Burger",
+    "address": "3 North Avenue, San Francisco CA",
+    "phone": "+180022287906",
+    "website": "www.luigiburger.com",
+    "image": "chamber/images/burger.svg",
+    "membership": "Non for Profit",
+    "rating": 4.5
+  },
+  {
+    "name": "Amanda's Fashion",
+    "address": "1523 SW Rockwell St, San Francisco CA",
+    "phone": "+180090990122",
+    "website": "www.amandasfashion.com",
+    "image": "chamber/images/Fashion.svg",
+    "membership": "gold",
+    "rating": 3.6
+  },
+  {
+    "name": "Drew Bakery",
+    "address": "16 Main St, San Francisco CA",
+    "phone": "+180050387906",
+    "website": "www.drewbakery.com",
+    "image": "chamber/images/cup_cake.svg",
+    "membership": "silver",
+    "rating": 4.7
+  },
+  {
+    "name": "Rose Flower Shop",
+    "address": "5678 McCoy St, San Francisco CA",
+    "phone": "+180077322378",
+    "website": "www.roseflowershop.com",
+    "image": "chamber/images/flower_gift.svg",
+    "membership": "silver",
+    "rating": 3.9
+  }
+]
