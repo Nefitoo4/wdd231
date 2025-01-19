@@ -20,7 +20,7 @@ function showList() {
 /**********************************************************************************/
 /**********************************FETCH/ASYNC/AWAIT******************************/
 async function obtainCompanies() {
-  const chamber_companies = "chamber/data/members.json";
+  const chamber_companies = "/chamber/data/members.json";
   console.log(chamber_companies);
   try {
     const response = await fetch(chamber_companies);
