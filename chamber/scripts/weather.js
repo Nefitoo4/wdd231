@@ -32,9 +32,7 @@ async function apiFetch() {
 
 //display the json data onto my web page
 function displayResults(data) {
-  console.log("hello");
   mytown.innerHTML = data.name;
-  const fahrenheitTemp = data.main.temp;
   mydescription.innerHTML = data.weather[0].description;
   mytemperature.innerHTML = `${data.main.temp}&deg;f`;
   const iconsrc = `https://openweathermap.org/img/w/10d.png`;
@@ -76,7 +74,7 @@ async function apiFetchForecast() {
     const response = await fetch(urlForecast);
     if (response.ok) {
       const data = await response.json();
-      console.log(data); // solo para testing
+      console.log(data); // just for testing
       displayForecastResults(data); // show the forecast
     } else {
       throw Error(await response.text());
@@ -89,11 +87,10 @@ async function apiFetchForecast() {
 // show the forecast details
 
 function displayCurrentResults(data) {
-  const fahrenheitTemp = data.main.temp;
   mytemperature.innerHTML = `${data.main.temp}&deg;F`;
   let desc = data.weather[0].description;
   mydescription.textContent = desc;
-  myGraphic.src = `https://openopenweathermap.org/img/wn/${data.weather[0].icon}.png`;
+  myGraphic.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
   myGraphic.alt = desc;
 }
 
@@ -104,7 +101,7 @@ function displayForecastResults(data) {
     .filter((forecast, index) => index % 8 === 0)
     .slice(0, 3); // filter 3 days
 
-  forecastContainer.innerHTML = ""; // clean first the container
+  forecastContainer.innerHTML = ""; // clean up first the container
   forecastList.forEach((day) => {
     const date = new Date(day.dt * 1000).toLocaleDateString("en-US", {
       weekday: "long",
