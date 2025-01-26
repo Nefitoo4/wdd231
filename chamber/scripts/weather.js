@@ -90,7 +90,7 @@ function displayCurrentResults(data) {
   mytemperature.innerHTML = `${data.main.temp}&deg;F`;
   let desc = data.weather[0].description;
   mydescription.textContent = desc;
-  myGraphic.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+  myGraphic.src = `https://openweathermap.org/img/w/10d.png`;
   myGraphic.alt = desc;
 }
 
