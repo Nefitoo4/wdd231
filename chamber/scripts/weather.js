@@ -34,6 +34,7 @@ async function apiFetch() {
 function displayResults(data) {
   console.log("hello");
   mytown.innerHTML = data.name;
+  const fahrenheitTemp = data.main.temp;
   mydescription.innerHTML = data.weather[0].description;
   mytemperature.innerHTML = `${data.main.temp}&deg;f`;
   const iconsrc = `https://openweathermap.org/img/w/10d.png`;
@@ -48,7 +49,7 @@ apiFetch();
 /**********************************FORECAST 3 DAYS******************************/
 // select HTML elements in the document
 const forecastContainer = document.querySelector("#forecast_days");
-const urlCurrent = `https://api.openweathermap.org/data/2.5/weather?lat=${mylat}&lon=${mylong}&units=metric&appid=${apiKey}`;
+const urlCurrent = `https://api.openweathermap.org/data/2.5/weather?lat=${mylat}&lon=${mylong}&units=imperial&appid=${apiKey}`;
 const urlForecast = `https://api.openweathermap.org/data/2.5/forecast?lat=${mylat}&lon=${mylong}&units=imperial&appid=${apiKey}`;
 
 // obtain the weater data
@@ -88,9 +89,12 @@ async function apiFetchForecast() {
 // show the forecast details
 
 function displayCurrentResults(data) {
-  currentTemp.innerHTML = `${data.main.temp}&deg;C`;
+  const fahrenheitTemp = data.main.temp;
+  mytemperature.innerHTML = `${data.main.temp}&deg;F`;
   let desc = data.weather[0].description;
-  captionDesc.textContent = desc;
+  mydescription.textContent = desc;
+  myGraphic.src = `https://openopenweathermap.org/img/wn/${data.weather[0].icon}.png`;
+  myGraphic.alt = desc;
 }
 
 // show the forecast for 3 days
