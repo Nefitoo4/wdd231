@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nefi Zaldana - WDD231 Web FrontEnd Development I"
+    />
+    <meta name="author" content="Nefi Alberto Zaldana" />
+    <link rel="icon" href="./images/favicon.ico" />
+    <title>Chamber of Comerce</title>
+    <!--**********************************************************************************-->
+    <!--**********************************************************************************-->
+    <!--Facebook social media metatags-->
+    <meta property="og:title" content="Chamber of Commerce" />
+    <meta
+      property="og:description"
+      content="Chamber of Commerce of my hometown it joins important entrepreneurs
+    to shape this important nongovernmental organization and boost trade."
+    />
+    <meta property="og:image" content="../week01/images/town_hall.jpg" />
+    <meta property="og:image:width" content="227" />
+    <meta property="og:image:height" content="222" />
+    <meta property="og:image:alt" content="town hall santa tecla" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://nefitoo4.github.io/wdd231/chamber/directory.html"
+    />
+    <!--**********************************************************************************-->
+    <!--**********************************************************************************-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Playwrite+AU+SA&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/join.css" />
+    <link rel="stylesheet" href="./styles/large_chamber.css" />
+    <script src="../week01/scripts/home_page.js" defer></script>
+    <script src="../week01/scripts/home_page3.js" defer></script>
+    <script src="../chamber/scripts/join.js" defer></script>
+  </head>
+  <!--**********************************************************************************-->
+  <!--**********************************************************************************-->
+  <body>
+    <header>
+      <h1>Santa Tecla</h1>
+      <p>Chamber of Commerce</p>
+    </header>
+    <!--**********************************************************************************-->
+    <!--**********************************************************************************-->
+    <nav class="menu">
+      <button id="ham_menu" tittle="navigation menu"></button>
+      <div class="menu-links">
+        <a href="https://nefitoo4.github.io/wdd231/chamber/index.html">Home</a>
+        <a href="https://nefitoo4.github.io/wdd231/chamber/directory.html"
+          >Directory</a
+        >
+        <a href="#">Join</a>
+        <a href="#">Discover</a>
+      </div>
+    </nav>
+    <!--**********************************************************************************-->
+    <!--**********************************************************************************-->
+    <main>
+      <div class="main-container">
+        <div class="form_container">
+          <h2 class="div-title">Membership Application Form</h2>
+          <form action="thankyou.html" method="get">
+            <label for="first-name" title="applicant_name">Name:</label>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              required
+              title="applicant_name"
+              autocomplete="family-name"
+            /><br />
+
+            <label for="last-name" title="applicant_lastname">Last name:</label>
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              required
+              title="applicant_lastname"
+              autocomplete="given-name"
+            /><br />
+
+            <label for="organization-title" title="applicant_organization"
+              >Organization Title:</label
+            >
+            <input
+              type="text"
+              id="organization-title"
+              name="organization-title"
+              title="applicant_org_title"
+              autocomplete="organization-title"
+              pattern="[A-Za-z\\-\\s]{7,}"
+            /><br />
+
+            <label for="email" title="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              title="email"
+              autocomplete="email"
+              placeholder="example@email.com"
+            /><br />
+
+            <label for="phone" title="mobile_ph#">Phone:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              title="mobile_ph#"
+              autocomplete="tel"
+            /><br />
+
+            <label for="orgazination" title="organization-name"
+              >Organization name:</label
+            >
+            <input
+              type="text"
+              id="organization"
+              name="organization"
+              required
+              title="organization_name"
+              autocomplete="organization"
+            /><br />
+
+            <label for="membership-level" title="member_level"
+              >Membership level:</label
+            >
+            <select id="membership-level" name="membership-level">
+              <option value="Non-profit Membership">
+                Non-profit Membership
+              </option>
+              <option value="Bronce Membership">Bronce Membership</option>
+              <option value="Silver Membership">Silver Membership</option>
+              <option value="Gold Membership">Gold membership</option></select
+            ><br />
+
+            <label for="description" title="organization_description"
+              >Organization Description:</label
+            >
+            <textarea
+              id="description"
+              name="description"
+              title="organization_description"
+            ></textarea
+            ><br />
+
+            <input
+              type="hidden"
+              id="timestamp"
+              name="timestamp"
+              value="` + new Date().toISOString() + `"
+            /><br />
+
+            <input type="submit" value="Apply" />
+          </form>
+        </div>
+
+        <!--**********************************************************************************-->
+        <!--**********************************************************************************-->
+        <div class="membership_container">
+          <h2 class="div-title">Membership Levels</h2>
+          <div class="membership-card">
+            <h3>Non profit Membership Level</h3>
+            <button class="model_membership">Learn more</button>
+            <dialog id="non-profit">
+              <button class="close">x</button>
+              <h3>Non Profit Membership Level</h3>
+              <hr />
+              <li>Free membership</li>
+              <li>Free montly capacitations</li>
+            </dialog>
+          </div>
+          <div class="membership-card">
+            <h3>Bronze Membership Level</h3>
+            <button class="model_membership">Learn more</button>
+            <dialog id="bronze">
+              <button class="close">x</button>
+              <h3>Bronze Membership Level</h3>
+              <hr />
+              <li>$10 Annual membership</li>
+              <li>Free montly capacitations</li>
+              <li>10% Discounts in all supermarket and stores</li>
+            </dialog>
+          </div>
+          <div class="membership-card">
+            <h3>Silver Membership Level</h3>
+            <button class="model_membership">Learn more</button>
+            <dialog id="silver">
+              <button class="close">x</button>
+              <h3>Silver Membership Level</h3>
+              <hr />
+              <li>$25 Annual membership</li>
+              <li>Free montly capacitations</li>
+              <li>15% Discounts in all supermarket and stores</li>
+              <li>Free access to special festivals</li>
+            </dialog>
+          </div>
+          <div class="membership-card">
+            <h3>Gold Membership Level</h3>
+            <button class="model_membership">Learn more</button>
+            <dialog id="gold">
+              <button class="close">x</button>
+              <h3>Gold Membership Level</h3>
+              <hr />
+              <li>$100 Annual membership</li>
+              <li>Free montly capacitations</li>
+              <li>20% Discounts in all supermarket and stores</li>
+              <li>Free access to special festivals</li>
+              <li>Free Advertising</li>
+            </dialog>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--**********************************************************************************-->
+    <!--**********************************************************************************-->
+    <footer id="footer">
+      <div>
+        <p>WDD231 Class Project</p>
+        <p>Nefi Alberto Zaldana</p>
+        <span>&copy; 2025 | Santa Tecla | Chamber of Commerce</span>
+        <p id="lastModified">Last Modification:</p>
+      </div>
+    </footer>
+  </body>
+</html>
