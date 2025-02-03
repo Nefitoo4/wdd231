@@ -186,10 +186,10 @@ dialog {
 /**********************************************************************************/
 /**********************************************************************************/
 #form-data {
-  background-color: antiquewhite;
-  border: 2px solid red;
+  background-color: aquamarine;
+  border: 2px solid blue;
   border-radius: 10px;
-  margin-right: 50px;
+  margin-right: 100px;
   padding: 20px;
 }
 /**********************************************************************************/
