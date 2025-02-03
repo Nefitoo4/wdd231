@@ -98,7 +98,7 @@
               name="organization-title"
               title="applicant_org_title"
               autocomplete="organization-title"
-              pattern="[A-Za-z\\-\\s]{7,}"
+              pattern="[A-Za-z\\-\\s]{3,}"
             /><br />
 
             <label for="email" title="email">Email:</label>
@@ -156,12 +156,13 @@
             ></textarea
             ><br />
 
-            <input
+            <label
               type="hidden"
               id="timestamp"
               name="timestamp"
               value="` + new Date().toISOString() + `"
-            /><br />
+            ></label
+            ><br />
 
             <input type="submit" value="Apply" />
           </form>

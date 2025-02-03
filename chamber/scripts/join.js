@@ -24,17 +24,3 @@ document
 
     window.location.href = `thankyou.html?${data.toString()}`;
   });
-
-//thankyou page display data
-const urlParams = new URLSearchParams(window.location.search);
-const formData = {};
-urlParams.forEach((value, key) => {
-  formData[key] = value;
-});
-
-const formDataDiv = document.getElementById("form-data");
-for (const [key, value] of Object.entries(formData)) {
-  const p = document.createElement("p");
-  p.textContent = `${key}: ${value}`;
-  formDataDiv.appendChild(p);
-}
