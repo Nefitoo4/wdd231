@@ -1,0 +1,48 @@
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 992px) {
+  #hero_image {
+    width: 100%;
+  }
+  .cards {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #ham_menu {
+    display: none;
+  }
+  .menu a {
+    display: block;
+    text-align: center;
+    flex: 1;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-links {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #ham_menu {
+    display: block;
+  }
+  #ham_menu::before {
+    content: "☰";
+  }
+
+  #ham_menu.open::before {
+    content: "X";
+  }
+}
+@media only screen and (max-width: 576px) {
+}
