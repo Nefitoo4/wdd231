@@ -1,0 +1,13 @@
+@media only screen and (min-width: 38rem) {
+  .site_cards {
+    display: grid;
+    grid-template-areas:
+      "picture name"
+      "picture description"
+      "picture location";
+  }
+
+  .site_cards img {
+    width: 300px;
+  }
+}

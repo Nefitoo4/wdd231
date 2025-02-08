@@ -1,0 +1,152 @@
+:root {
+  --primary-color: rgb(4, 101, 156);
+  --secondary-color: gray;
+  --third-color: #000;
+  --forth-color: rgb(112, 3, 3);
+  --fifth-color: white;
+  --main-font: "Monserrat", sans-serif;
+  --secondary-font: "Playwrite AU SA", cursive;
+}
+
+/**********************************************************************************/
+/**********************************************************************************/
+
+header {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  color: var(--fifth-color);
+  text-align: center;
+  font-family: var(--secondary-font);
+}
+
+/**********************************************************************************/
+/**********************************************************************************/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--third-color);
+}
+
+nav a {
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
+  background-color: var(--third-color);
+  color: var(--fifth-color);
+  padding: 1rem;
+  flex-grow: 1;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  transform: scale(1.1); /* Increase the size in 110% */
+  box-shadow: 0 0 10px;
+  text-shadow: 0 0 10px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-links {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}
+
+.menu a {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  flex: 1 1 100%;
+}
+
+#ham_menu {
+  font-size: 2rem;
+  padding: 0.5rem;
+  border: 0;
+  background-color: var(--third-color);
+  color: var(--fifth-color);
+  bottom: 1.5rem;
+  cursor: pointer;
+}
+
+#ham_menu::before {
+  content: "☰";
+}
+
+#ham_menu.open::before {
+  content: "X";
+}
+
+.menu.open .menu-links {
+  display: flex;
+}
+.menu.open {
+  display: block;
+}
+
+/**********************************************************************************/
+/**********************************************************************************/
+
+* {
+  box-sizing: border-box;
+}
+
+.site_cards {
+  display: inline-block;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  margin: 1rem 8px;
+  background-color: rgb(210, 209, 209);
+  overflow: hidden;
+  text-align: center;
+  display: grid;
+  grid-template-areas:
+    "picture"
+    "name"
+    "description"
+    "location";
+}
+
+.site_cards h2 {
+  margin: 1rem;
+  grid-area: name;
+}
+
+.site_cards img {
+  width: 100%;
+  grid-area: picture;
+}
+
+.site_cards p {
+  margin: 1rem;
+  grid-area: description;
+}
+
+.site_cards address {
+  margin: 1rem;
+  grid-area: location;
+}
+/**********************************************************************************/
+/**********************************************************************************/
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--fifth-color);
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#footer {
+  margin-top: 20px;
+}
+
+#lastModified {
+  color: #ffff00;
+}
