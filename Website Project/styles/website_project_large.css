@@ -8,6 +8,19 @@
   .cards {
     max-width: 100%;
   }
+  .wireframes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .wider-view {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -45,4 +58,17 @@
   }
 }
 @media only screen and (max-width: 576px) {
+  .wireframes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .wider-view {
+    display: none;
+  }
 }
