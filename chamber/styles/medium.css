@@ -10,4 +10,9 @@
   .site_cards img {
     width: 300px;
   }
+
+  .site_cards img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
 }

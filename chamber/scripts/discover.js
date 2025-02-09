@@ -18,6 +18,7 @@ function displayItems(sites) {
     const pic = document.createElement("img");
     pic.src = `${x.image}`;
     pic.alt = x.name;
+    pic.classList.add("lazy");
     card.appendChild(pic);
 
     //build the title element
@@ -42,3 +43,44 @@ function displayItems(sites) {
 
 //display all items of json file
 displayItems(sites);
+
+/************************************************************* */
+//number of visits with local storage
+document.addEventListener("DOMContentLoaded", function () {
+  const displayMessage = document.getElementById("greeting");
+
+  //get the current Date
+  const currentDate = new Date();
+
+  //function that calculate two different dates
+  function daysBetween(date1, date2) {
+    const oneDay = 24 * 60 * 60 * 1000; // miliseconds in one day
+    return Math.round(Math.abs((date1 - date2) / oneDay));
+  }
+
+  //get the visit information through localStorage
+  const lastVisit = localStorage.getItem("lastVisit");
+  const visitCount = localStorage.getItem("visitCount");
+
+  if (lastVisit) {
+    const lastVisitDate = new Date(lastVisit);
+    const hoursDifference = Math.abs(currentDate - lastVisitDate) / 36e5;
+
+    if (hoursDifference < 24) {
+      displayMessage.textContent = "Back so soon! Awesome!";
+    } else {
+      const daysDifference = daysBetween(currentDate, lastVisitDate);
+      displayMessage.textContent = `You last visited ${daysDifference} days ago.`;
+    }
+  } else {
+    //first time when visit th ewebsite
+    displayMessage.textContent =
+      "Welcome! Let us know if you have any questions.";
+  }
+
+  // saves the current date as last visit
+  localStorage.setItem("lastVisit", currentDate);
+
+  //increment the visit count and save it in localstorage
+  localStorage.setItem("visitCount", visitCount ? parseInt(visitCount) + 1 : 1);
+});

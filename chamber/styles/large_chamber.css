@@ -11,8 +11,17 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-}
 
+  .site_cards img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .site_cards img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+}
 @media only screen and (min-width: 992px) {
   #hero_image {
     width: 100%;
@@ -24,6 +33,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+  }
+  .site_cards img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
   }
 }
 
@@ -82,6 +95,11 @@
     display: flex;
     flex-direction: column;
   }
+
+  .site_cards img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -114,5 +132,9 @@
 
   .site-cards img {
     width: 300px;
+  }
+  .site_cards img:hover {
+    transform: none;
+    transition: 0;
   }
 }

@@ -115,6 +115,7 @@ nav a:hover {
 .site_cards h2 {
   margin: 1rem;
   grid-area: name;
+  font-family: var(--secondary-font);
 }
 
 .site_cards img {
@@ -125,11 +126,30 @@ nav a:hover {
 .site_cards p {
   margin: 1rem;
   grid-area: description;
+  font-family: var(--main-font);
 }
 
 .site_cards address {
   margin: 1rem;
   grid-area: location;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.greeting {
+  text-align: center;
+  font-family: var(--secondary-font);
+  color: var(--primary-color);
+}
+
+.greeting {
+  opacity: 0;
+  animation: fadeIn 3s forwards; /* 3 animation seconds */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
 /**********************************************************************************/
 /**********************************************************************************/
