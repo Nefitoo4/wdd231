@@ -71,4 +71,11 @@
   .wider-view {
     display: none;
   }
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    text-align: center;
+  }
 }
