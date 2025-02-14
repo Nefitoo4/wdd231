@@ -1,0 +1,122 @@
+[
+  {
+    "type": "SUV",
+    "model": "Honda CRV",
+    "year": "2024",
+    "transmission": "automatic",
+    "capacity": "5",
+    "rent": "65.33",
+    "rating": "5",
+    "img": "./images/honda_crv.webp"
+  },
+  {
+    "type": "SUV compact",
+    "model": "Hyndai Creta",
+    "year": "2025",
+    "transmission": "automatic",
+    "capacity": "6",
+    "rent": "60.25",
+    "rating": "4.9",
+    "img": "./images/hyndai_creta.webp"
+  },
+  {
+    "type": "SUV compact Sport",
+    "model": "Nisan Kicks",
+    "year": "2024",
+    "transmission": "automatic",
+    "capacity": "5",
+    "rent": "62.41",
+    "rating": "4.7",
+    "img": "./images/nissan_kicks.webp"
+  },
+  {
+    "type": "Sedan Sport",
+    "model": "Honda Civic",
+    "year": "2025",
+    "transmission": "standard",
+    "capacity": "5",
+    "rent": "55.32",
+    "rating": "4.8",
+    "img": "./images/honda_civic.webp"
+  },
+  {
+    "type": "SUV Crossover Minivan",
+    "model": "Honda HRV",
+    "year": "2025",
+    "transmission": "automatic",
+    "capacity": "6",
+    "rent": "55.32",
+    "rating": "4.5",
+    "img": "./images/honda_hrv.webp"
+  },
+  {
+    "type": "Sedan",
+    "model": "Toyota Corolla",
+    "year": "2022",
+    "transmission": "standard",
+    "capacity": "5",
+    "rent": "55.32",
+    "rating": "4.2",
+    "img": "./images/toyota_corolla.webp"
+  },
+  {
+    "type": "Sedan",
+    "model": "Nissan Sentra",
+    "year": "2023",
+    "transmission": "automatic",
+    "capacity": "5",
+    "rent": "45.65",
+    "rating": "4.0",
+    "img": "./images/nissan_sentra.webp"
+  },
+  {
+    "type": "Sedan",
+    "model": "Hyndai Elandra",
+    "year": "2022",
+    "transmission": "automatic",
+    "capacity": "5",
+    "rent": "44.23",
+    "rating": "3.9",
+    "img": "./images/hyndai_elantra.webp"
+  },
+  {
+    "type": "Sedan",
+    "model": "Kia Forte",
+    "year": "2021",
+    "transmission": "automatic",
+    "capacity": "5",
+    "rent": "46.80",
+    "rating": "3.8",
+    "img": "./images/kia_forte.webp"
+  },
+  {
+    "type": "Hatchback Economic",
+    "model": "Kia Picanto",
+    "year": "2025",
+    "transmission": "automatic",
+    "capacity": "5",
+    "rent": "45.70",
+    "rating": "4.9",
+    "img": "./images/kia_picanto.webp"
+  },
+  {
+    "type": "Hatchback Economic",
+    "model": "Chevrolet Spark",
+    "year": "2023",
+    "transmission": "standard",
+    "capacity": "5",
+    "rent": "35.15",
+    "rating": "3.1",
+    "img": "./images/chevrolet_spark.webp"
+  },
+  {
+    "type": "SUV",
+    "model": "Ford Escape",
+    "year": "2024",
+    "transmission": "automatic",
+    "capacity": "5",
+    "rent": "50.67",
+    "rating": "4.1",
+    "img": "./images/ford_escape.webp"
+  }
+]
