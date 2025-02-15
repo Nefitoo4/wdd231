@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="./styles/web_pro_large.css" />
     <script src="./scripts/hamburger_menu.js" defer></script>
     <script src="./scripts/last_modification.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
   </head>
 
   <!--Header-->
@@ -45,7 +46,10 @@
       <button id="ham_menu" aria-label="navigation menu"></button>
       <div class="menu-links">
         <a href="#">Home</a>
-        <a href="#">Inventory</a>
+        <a
+          href="https://nefitoo4.github.io/wdd231/website_project/inventory.html"
+          >Inventory</a
+        >
         <a href="#">Financing</a>
         <a href="#">About Us</a>
       </div>
@@ -53,7 +57,55 @@
 
     <!--Hero image-->
     <main>
+      <div>
+        <label for="type">Type:</label>
+        <select id="type">
+          <option value="any">Any</option>
+          <option value="suv">SUV</option>
+          <option value="suv-sport">SUV Compact Sport</option>
+          <option value="suv-compact">SUV Compact</option>
+          <option value="sedan">Sedan</option>
+          <option value="hatchback">Hatback Economy</option>
+        </select>
+
+        <label for="year">Year:</label>
+        <select id="year">
+          <option value="any">Any</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+        </select>
+
+        <label for="capacity">Capacity:</label>
+        <select id="capacity">
+          <option value="any">Any</option>
+          <option value="4">4</option>
+          <option value="4">5</option>
+          <option value="4">6</option>
+        </select>
+
+        <label for="transmission">Transmission</label>
+        <select id="transmission">
+          <option value="any">Any</option>
+          <option value="automatic">Automatic</option>
+          <option value="manual">Manual</option>
+        </select>
+
+        <label for="pickup-date">Pickup Date:</label>
+        <input type="datetime-local" id="pickup-date" />
+
+        <label for="return-date">Return Date:</label>
+        <input type="datetime-local" id="return-date" />
+
+        <label for="age">Driver's Age:</label>
+        <input type="number" id="age" min="21" />
+
+        <button id="search">Search</button>
+      </div>
       <div class="car-chart"></div>
+      <div class="result"></div>
     </main>
 
     <div class="footer-info">

@@ -11,7 +11,7 @@ async function fetchInvData() {
       carItem.classList.add("car-item");
       carItem.innerHTML = `
             <h3>${car.type}</h3>
-            <img src="${car.img}" alt=${car.model}>
+            <img src="${car.img}" alt=${car.model} loading="lazy">
             <p><strong>Model:</strong>${car.model}</p>
             <p><strong>Year:</strong>${car.year}</p>
             <p><strong>Transmission:</strong>${car.transmission}</p>
