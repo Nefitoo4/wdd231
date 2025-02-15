@@ -17,7 +17,8 @@ async function fetchInvData() {
             <p><strong>Transmission:</strong>${car.transmission}</p>
             <p><strong>Capacity:</strong>${car.capacity}</p>
             <p><strong>Price:</strong>$${car.rent}</p>
-            <p><strong>Rating:</strong>${car.rating}</p>`;
+            <p><strong>Rating:</strong>${car.rating}</p>
+            <button class="select-btn" data-id="${car.id}">Select</button>`;
       carChart.appendChild(carItem);
     });
   } catch (error) {

@@ -10,7 +10,7 @@
     "img": "./images/honda_crv.webp"
   },
   {
-    "type": "SUV compact",
+    "type": "SUV",
     "model": "Hyndai Creta",
     "year": "2025",
     "transmission": "automatic",
@@ -20,7 +20,7 @@
     "img": "./images/hyndai_creta.webp"
   },
   {
-    "type": "SUV compact Sport",
+    "type": "SUV",
     "model": "Nisan Kicks",
     "year": "2024",
     "transmission": "automatic",
@@ -30,7 +30,7 @@
     "img": "./images/nissan_kicks.webp"
   },
   {
-    "type": "Sedan Sport",
+    "type": "Sedan",
     "model": "Honda Civic",
     "year": "2025",
     "transmission": "standard",
@@ -40,7 +40,7 @@
     "img": "./images/honda_civic.webp"
   },
   {
-    "type": "SUV Crossover Minivan",
+    "type": "SUV",
     "model": "Honda HRV",
     "year": "2025",
     "transmission": "automatic",
