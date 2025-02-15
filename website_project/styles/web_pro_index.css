@@ -1,5 +1,5 @@
 :root {
-  --primary-color: rgb(95, 2, 5);
+  --primary-color: rgb(0, 217, 255);
   --secondary-color: rgb(200, 173, 173);
   --third-color: #000;
   --forth-color: rgb(3, 101, 112);
@@ -13,9 +13,15 @@
 header {
   background-color: var(--primary-color);
   padding: 1rem;
-  color: var(--fifth-color);
+  color: var(--third-color);
   text-align: center;
   font-family: var(--secondary-font);
+  font-weight: bolder;
+}
+
+.title-h2 {
+  color: var(--forth-color);
+  font-weight: bold;
 }
 
 /*navigation and hamburger menu**/
@@ -86,6 +92,15 @@ nav a:hover {
   display: block;
 }
 
+/*car-search-engine*/
+.car-search-engine {
+  border: 2px solid var(--forth-color);
+  padding: 10px;
+  margin: 20px;
+  border-radius: 5px;
+  background-color: rgb(212, 245, 248);
+}
+
 /*car-charts style*/
 .car-chart {
   display: grid;
@@ -109,8 +124,15 @@ nav a:hover {
   margin: 5px 0;
 }
 
-/*div class car-rating*/
+.result {
+  color: green;
+  font-weight: bold;
+}
+.car-item:hover {
+  background-color: rgb(212, 245, 248);
+}
 
+/*div class car-rating*/
 .car-rating {
   border: 1px solid #ccc;
   padding: 10px;
@@ -125,6 +147,10 @@ nav a:hover {
 
 .car-rating p {
   margin: 5px 0;
+}
+
+.car-rating:hover {
+  background-color: rgb(212, 245, 248);
 }
 
 /*div class main container*/
@@ -193,7 +219,7 @@ nav a:hover {
 /*footer section*/
 footer {
   background-color: var(--primary-color);
-  color: var(--fifth-color);
+  color: var(--third-color);
   text-align: center;
   align-items: center;
   display: flex;
@@ -201,5 +227,6 @@ footer {
 }
 
 #lastModified {
-  color: #ffff00;
+  color: green;
+  font-weight: bold;
 }

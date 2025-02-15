@@ -57,7 +57,8 @@
 
     <!--Hero image-->
     <main>
-      <div>
+      <h2 class="title-h2">Search according to your preference</h2>
+      <div class="car-search-engine">
         <label for="type">Type:</label>
         <select id="type">
           <option value="any">Any</option>
@@ -81,16 +82,15 @@
         <label for="capacity">Capacity:</label>
         <select id="capacity">
           <option value="any">Any</option>
-          <option value="4">4</option>
-          <option value="4">5</option>
-          <option value="4">6</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
         </select>
 
         <label for="transmission">Transmission</label>
         <select id="transmission">
           <option value="any">Any</option>
           <option value="automatic">Automatic</option>
-          <option value="manual">Manual</option>
+          <option value="standard">Standard</option>
         </select>
 
         <label for="pickup-date">Pickup Date:</label>
@@ -104,10 +104,12 @@
 
         <button id="search-btn">Search</button>
       </div>
-      <div class="car-chart"></div>
+      <div class="car-chart-search-result">
+        <div class="car-chart-engine"></div>
+      </div>
       <div class="result"></div>
     </main>
-    <h2>
+    <h2 class="title-h2">
       Take a look at our highest rated and most favorite cars, as chosen by our
       clients
     </h2>

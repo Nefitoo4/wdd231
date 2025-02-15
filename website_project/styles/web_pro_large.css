@@ -10,6 +10,14 @@
     flex: 1;
     margin: 10px;
   }
+  .car-chart-search-engine {
+    display: flex;
+    justify-content: space-between;
+  }
+  .car-chart-engine {
+    flex: 1;
+    margin: 10px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
