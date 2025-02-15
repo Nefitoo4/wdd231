@@ -108,7 +108,7 @@ fetch("./data/inventory.json")
     //order the vehicle clasification
     const topRatedCars = data.sort((a, b) => b.rating - a.rating).slice(0, 3);
     //assing the vehicles to container
-    const carCharts = document.querySelectorAll(".car-chart");
+    const carCharts = document.querySelectorAll(".car-rating");
 
     topRatedCars.forEach((car, index) => {
       const carChart = carCharts[index];

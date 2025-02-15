@@ -2,6 +2,14 @@
   .car-chart {
     grid-template-columns: repeat(3, 1fr);
   }
+  .car-rating-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .car-rating {
+    flex: 1;
+    margin: 10px;
+  }
 }
 
 @media only screen and (max-width: 992px) {

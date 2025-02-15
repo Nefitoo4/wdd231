@@ -109,6 +109,24 @@ nav a:hover {
   margin: 5px 0;
 }
 
+/*div class car-rating*/
+
+.car-rating {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.car-rating h3 {
+  margin: 10px 0;
+}
+
+.car-rating p {
+  margin: 5px 0;
+}
+
 /*div class main container*/
 .main-container {
   text-align: center;
