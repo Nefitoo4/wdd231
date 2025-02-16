@@ -28,3 +28,43 @@ fetch("./data/inventory.json")
     });
   })
   .catch((error) => console.error("Error loading JSON:", error));
+
+/*array method*/
+const images = [
+  {
+    small: "./images/nextdrive-small.webp",
+    medium: "./images/nextdrive-medium.webp",
+    large: "./images/nextdrive-large.webp",
+  },
+  {
+    small: "./images/hero-small.webp",
+    medium: "./images/hero-medium.webp",
+    large: "./images/hero-large.webp",
+  },
+  {
+    small: "./images/small-image.webp",
+    medium: "./images/medium-image.webp",
+    large: "./images/large-image.webp",
+  },
+];
+
+let currentImageIndex = 0;
+
+function changeHeroImage() {
+  const heroImage = document.getElementById("hero_image");
+  const heroSourceLarge = document.getElementById("hero_source_large");
+  const heroSourceMedium = document.getElementById("hero_source_medium");
+
+  heroImage.classList.add("fade");
+
+  setTimeout(() => {
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    heroImage.src = images[currentImageIndex].small;
+    heroSourceLarge.srcset = images[currentImageIndex].large;
+    heroSourceMedium.srcset = images[currentImageIndex].medium;
+
+    heroImage.classList.remove("fade");
+  }, 1000);
+}
+
+setInterval(changeHeroImage, 10000); //hero image change each 10s
