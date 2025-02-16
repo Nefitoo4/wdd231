@@ -43,6 +43,17 @@
   .car-chart {
     grid-template-columns: repeat(2, 1fr);
   }
+  .hero-content {
+    display: none;
+  }
+  .buttons {
+    display: block;
+  }
+  #hero_image,
+  .hero-content,
+  .buttons {
+    transition: none;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -105,11 +116,5 @@
   }
   .car-chart {
     grid-template-columns: repeat(1, 1fr);
-  }
-  .hero img {
-    width: 100%;
-    height: auto;
-    position: relative;
-    border-bottom: 0;
   }
 }

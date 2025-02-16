@@ -95,6 +95,7 @@ nav a:hover {
 /*hero image*/
 #hero_image {
   width: 100%;
+  height: auto;
   margin: 0 auto;
   display: block;
   position: absolute;
@@ -124,29 +125,27 @@ nav a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--third-color);
-  background-color: rgba(255, 255, 255, 0.85); /*50% opacity*/
+  background-color: rgba(255, 255, 255, 0.85); /*85% opacity*/
   border-radius: 20px;
   padding: 10px;
 }
-.cta-button {
+
+.buttons {
+  display: none;
   position: absolute;
   bottom: 20px;
-  right: 20px;
-  background-color: var(--primary-color);
-  padding: 10px 20px;
-  color: #fff;
-  text-decoration: none;
-  font-family: var(--main-font);
-  font-size: 16px;
-  font-weight: 20px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  left: 50%;
+  transform: translate(-50%);
 }
-.cta-button:hover {
-  background-color: var(--third-color);
-  font-family: var(--main-font);
-  font-weight: 20px;
-  font-size: 16px;
+
+.hero-content-btn {
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid var(--forth-color);
+  border-radius: 5px;
+  color: var(--forth-color);
+  background-color: rgba(255, 255, 255, 0.85); /*85% opacity*/
+  opacity: 1;
 }
 
 /*car-search-engine*/
