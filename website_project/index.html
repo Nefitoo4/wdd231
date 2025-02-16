@@ -39,6 +39,7 @@
   <body>
     <header>
       <h1>NextDrive Rent A Car</h1>
+      <p>Ready for a new Adventure?</p>
     </header>
 
     <!--Navigation menu-->
@@ -50,64 +51,61 @@
           href="https://nefitoo4.github.io/wdd231/website_project/inventory.html"
           >Inventory</a
         >
-        <a href="#">Financing</a>
-        <a href="#">About Us</a>
+        <a href="#">Join Us</a>
+        <a href="#">Frequently Asked Questions</a>
       </div>
     </nav>
 
     <!--Hero image-->
-    <main>
-      <h2 class="title-h2">Search according to your preference</h2>
-      <div class="car-search-engine">
-        <label for="type">Type:</label>
-        <select id="type">
-          <option value="any">Any</option>
-          <option value="suv">SUV</option>
-          <option value="sedan">Sedan</option>
-          <option value="hatchback">Hatback Economy</option>
-        </select>
-
-        <label for="year">Year:</label>
-        <select id="year">
-          <option value="any">Any</option>
-          <option value="2021">2021</option>
-          <option value="2022">2022</option>
-          <option value="2023">2023</option>
-          <option value="2024">2024</option>
-          <option value="2025">2025</option>
-        </select>
-
-        <label for="capacity">Capacity:</label>
-        <select id="capacity">
-          <option value="any">Any</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-        </select>
-
-        <label for="transmission">Transmission</label>
-        <select id="transmission">
-          <option value="any">Any</option>
-          <option value="automatic">Automatic</option>
-          <option value="standard">Standard</option>
-        </select>
-
-        <button id="search-btn">Search</button>
+    <div class="hero-container">
+      <picture>
+        <source
+          srcset="./images/nextdrive-large.webp"
+          media="(min-width: 1000px)"
+        />
+        <source
+          srcset="./images/nextdrive-medium.webp"
+          media="(min-width: 500px)"
+        />
+        <img
+          id="hero_image"
+          src="./images/nextdrive-small.webp"
+          alt="temple needles pointing to the sky"
+        />
+      </picture>
+      <div class="hero-content">
+        <h1>Welcome!</h1>
+        <p>
+          We welcome you to our website we would like to enjoy your activities
+          with us.<br />The name of this company represents the next driving
+          adventures for all customers who want to experience new and exciting
+          journeys on the road.
+        </p>
+        <p><strong>Domain: </strong></p>
+        <a href="https://nefitoo4.github.io/wdd231/website_project/index.html"
+          ><span style="color: blue">next-drive_rent-a-car.com</span></a
+        >
+        <h2>Our Purpose</h2>
+        <p>
+          Due to the growing need of thousands of users for transportation,<br />
+          an alternative has been created for those who wish to travel
+          privately.<br />
+          The service offers comfort, safety, a variety of preferred vehicles,
+          and an affordable price.
+        </p>
       </div>
-      <div class="car-chart-search-result">
-        <div class="car-chart-engine"></div>
-      </div>
-      <div class="result"></div>
-    </main>
-    <h2 class="title-h2">
-      Take a look at our highest rated and most favorite cars, as chosen by our
-      clients
-    </h2>
-    <div class="car-rating-container">
-      <div class="car-rating"></div>
-      <div class="car-rating"></div>
-      <div class="car-rating"></div>
     </div>
-
+    <main>
+      <h2 class="title-h2">
+        Take a look at our highest rated and most favorite cars, as chosen by
+        our clients
+      </h2>
+      <div class="car-rating-container">
+        <div class="car-rating"></div>
+        <div class="car-rating"></div>
+        <div class="car-rating"></div>
+      </div>
+    </main>
     <div class="footer-info">
       <div class="website-info">
         <ul>

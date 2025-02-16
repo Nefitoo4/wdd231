@@ -92,6 +92,49 @@ nav a:hover {
   display: block;
 }
 
+/*hero image*/
+#hero_image {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.hero-container {
+  position: relative;
+  text-align: center;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--third-color);
+  background-color: rgba(255, 255, 255, 0.85); /*50% opacity*/
+  border-radius: 20px;
+  padding: 10px;
+}
+.cta-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+  background-color: var(--third-color);
+  font-family: var(--main-font);
+  font-weight: 20px;
+  font-size: 16px;
+}
+
 /*car-search-engine*/
 .car-search-engine {
   border: 2px solid var(--forth-color);
@@ -131,6 +174,8 @@ nav a:hover {
 .car-item:hover {
   background-color: rgb(212, 245, 248);
 }
+
+/*modal*/
 
 /*div class car-rating*/
 .car-rating {

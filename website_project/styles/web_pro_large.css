@@ -106,4 +106,10 @@
   .car-chart {
     grid-template-columns: repeat(1, 1fr);
   }
+  .hero img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-bottom: 0;
+  }
 }
