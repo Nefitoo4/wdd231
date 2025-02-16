@@ -18,23 +18,7 @@ async function fetchInvData() {
             <p><strong>Capacity:</strong>${car.capacity}</p>
             <p><strong>Price:</strong>$${car.rent}</p>
             <p><strong>Rating:</strong>${car.rating}</p>
-            <button class="select-btn" data-id="${car.id}">Select</button>
-                      <!--Modal HTML-->
-          <div class="modal" id="modal-${car.id}">
-          <div class="modal-content">
-            <span class="close" data-id="${car.id}">&times;</span>
-            <h2>Booking Details for ${car.model}</h2>
-            <label for="pickup-date-${car.id}">Pickup Date:</label>
-            <input type="date" id="pickup-date-${car.id}" />
-            <br />
-            <label for="return-date-${car.id}">Return Date:</label>
-            <input type="date" id="return-date-${car.id}" />
-            <br />
-            <p id="total-price-${car.id}"></p>
-            <button class="book-btn" data-id="${car.id}">Book</button>
-            <button class="cancel-btn" data-id="${car.id}">Cancel</button>
-          </div>
-        </div>`;
+            <button class="select-btn" data-id="${car.id}">Select</button>`;
       carChart.appendChild(carItem);
     });
   } catch (error) {
