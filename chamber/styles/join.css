@@ -148,6 +148,7 @@ dialog {
   border: 1px solid var(--third-color);
   border-radius: 5px;
   text-align: left;
+  margin: 0 auto;
 }
 
 .close {

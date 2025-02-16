@@ -148,6 +148,35 @@ nav a:hover {
   opacity: 1;
 }
 
+dialog {
+  border: 2px solid var(--forth-color);
+  border-radius: 5px;
+  padding: 10px;
+  background-color: var(--secondary-color);
+  font-family: var(--main-font);
+  text-align: center;
+  align-items: center;
+  width: 80%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: red;
+  color: var(--fifth-color);
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: var(--fifth-color);
+  background-color: rgb(94, 0, 0);
+}
+
 /*car-search-engine*/
 .car-search-engine {
   border: 2px solid var(--forth-color);

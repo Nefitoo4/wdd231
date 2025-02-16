@@ -68,3 +68,18 @@ function changeHeroImage() {
 }
 
 setInterval(changeHeroImage, 10000); //hero image change each 10s
+
+//model card in membership card button
+document.querySelectorAll(".hero-content-btn").forEach((button) => {
+  button.addEventListener("click", (event) => {
+    const dialogId = event.target.nextElementSibling.id;
+    document.getElementById(dialogId).showModal();
+  });
+});
+
+document.querySelectorAll(".close").forEach((button) => {
+  button.addEventListener("click", (event) => {
+    const dialog = event.target.closest("dialog");
+    dialog.close();
+  });
+});
