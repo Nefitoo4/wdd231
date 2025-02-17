@@ -287,13 +287,22 @@ dialog {
 }
 
 /*form*/
-.form {
+#form {
   margin: 10px;
   padding: 10px;
   background-color: var(--secondary-color);
   align-items: center;
   width: 100%;
   max-width: 400px;
+}
+
+#enrollment {
+  background-color: var(--secondary-color);
+  border: 2px solid var(--forth-color);
+  border-radius: 10px;
+  margin-right: 100px;
+  margin-bottom: 20px;
+  padding: 20px;
 }
 
 /*footer info section*/
