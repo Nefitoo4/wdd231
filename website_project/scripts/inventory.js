@@ -102,13 +102,40 @@ async function fetchInvData() {
       });
     });
 
-    //event listener for book
+    //event listener for book btn
     document.querySelectorAll(".book").forEach((button) => {
       button.addEventListener("click", (event) => {
-        // Aquí puedes agregar la funcionalidad para reservar el vehículo
-        alert("Vehículo reservado con éxito!");
         const dialog = event.target.closest("dialog");
+        const carId = event.target.dataset.id;
+        const pickupDate = dialog.querySelector(".pickup-date").value;
+        const returnDate = dialog.querySelector(".return-date").value;
+        const email = dialog.querySelector(`#email-${carId}`).value;
+        const paymentNumber = dialog.querySelector(`#number-${carId}`).value;
+        const totalCost = dialog.querySelector(
+          `#total-cost-${carId}`
+        ).innerText;
+
+        // reservation object
+        const reservation = {
+          carId,
+          pickupDate,
+          returnDate,
+          email,
+          paymentNumber,
+          totalCost,
+        };
+
+        // localstorage
+        let reservations = JSON.parse(localStorage.getItem("bookings")) || [];
+        console.log(reservations);
+        reservations.push(reservation);
+        localStorage.setItem("bookings", JSON.stringify(reservations));
+
+        alert("Booking successfull!!");
         dialog.close();
+
+        //redirect to reservations.html
+        window.location.href = "reservations.html";
       });
     });
   } catch (error) {
