@@ -38,6 +38,7 @@
   <body>
     <header>
       <h1>NextDrive Rent A Car</h1>
+      <p>Ready for a new Adventure?</p>
     </header>
 
     <!--Navigation menu-->
@@ -61,7 +62,56 @@
     </nav>
 
     <!--Hero image-->
-    <main></main>
+    <main>
+      <div class="form-div">
+        <h3 class="title-h2">Become a Member and start a world of benefits!</h3>
+        <form class="form">
+          <fieldset>
+            <legend>Personal Data</legend>
+            <label for="name">First Name:</label>
+            <input type="text" id="name" name="name" required /><br /><br />
+
+            <label for="email">Email:</label>
+            <input type="email" id="name" name="email" required /><br /><br />
+
+            <label for="phone">Phone number:</label>
+            <input type="phone" id="phone" name="phone" required /><br /><br />
+          </fieldset>
+
+          <fieldset>
+            <legend>Membership Information</legend>
+            <label for="membershipType">Membership Type:</label>
+            <select id="membershipType" name="membershipType" required>
+              <option value="basic">Basic</option>
+              <option value="premium">Premium</option>
+              <option value="vip">VIP</option></select
+            ><br /><br />
+            <label for="duration">Membership Duration:</label>
+            <select id="duration" name="duration" required>
+              <option value="monthly">Monthly</option>
+              <option value="anual">Anual</option></select
+            ><br /><br />
+          </fieldset>
+
+          <fieldset>
+            <legend>Confirmation</legend>
+            <label for="terms"
+              >Do you agree and accept the terms and Conditions?</label
+            >
+            <input
+              type="checkbox"
+              id="terms"
+              name="terms"
+              required
+            /><br /><br />
+
+            <button type="submit">Send</button>
+          </fieldset>
+        </form>
+      </div>
+      <div class="details-of-booking"></div>
+      <div class="membership-div"></div>
+    </main>
 
     <div class="footer-info">
       <div class="website-info">
