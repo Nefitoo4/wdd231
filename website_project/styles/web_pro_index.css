@@ -305,6 +305,54 @@ dialog {
   padding: 20px;
 }
 
+/*----RATING STYLE SECTION----*/
+#rating-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#rating-form label {
+  margin: 0 5px;
+}
+
+#rateButton {
+  background-color: #000;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  align-items: center;
+  display: block;
+  margin: 10px auto;
+  padding: 5px 15px;
+}
+
+#rateButton:hover {
+  background-color: var(--Text-color);
+  color: #000;
+}
+
+#reset-ratings {
+  background-color: #000;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  align-items: center;
+  display: none;
+  margin: 10px auto;
+  padding: 5px 15px;
+}
+
+#reset-ratings:hover {
+  background-color: var(--Text-color);
+  color: #000;
+}
+
 /*footer info section*/
 .footer-info {
   background-color: gray;

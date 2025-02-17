@@ -4,6 +4,12 @@ function getRandomElement(arr, num) {
   const shuffled = arr.sort(() => 0.5 - Math.random());
   return shuffled.slice(0, num);
 }
+/*method array using the inventory.json file objects and applying to searching box*/
+/*vehicles with higher rating*/
+function getRandomElement(arr, num) {
+  const shuffled = arr.sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, num);
+}
 /*JSON data migrated through async /await /fetch */
 fetch("./data/inventory.json")
   .then((response) => response.json())
@@ -160,4 +166,60 @@ document.querySelectorAll(".close").forEach((button) => {
     const dialog = event.target.closest("dialog");
     dialog.close();
   });
+});
+
+/*----RATING LOCALSTORAGE----*/
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("rating-form");
+  const ratingCountElement = document.getElementById("rating-count");
+  const averageRatingElement = document.getElementById("average-rating");
+
+  //Load rating data from LocalStorage
+  let ratingCount = parseInt(localStorage.getItem("ratingCount"), 10) || 0;
+  let totalRating = parseInt(localStorage.getItem("totalRting"), 10) || 0;
+
+  //Update display count and average
+  ratingCountElement.textContent = `${ratingCount}`;
+  averageRatingElement.textContent = ratingCount
+    ? `${(totalRating / ratingCount).toFixed(1)}`
+    : "0";
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const rating = form.querySelector('input[name="rating"]:checked');
+    if (rating) {
+      const ratingValue = parseInt(rating.value, 10);
+
+      //Increment rating count and update total rating
+      ratingCount++;
+      totalRating += ratingValue;
+
+      //Update LocalStorage
+      localStorage.setItem("ratingCount", `${ratingCount}`);
+      localStorage.setItem("totalRating", `${totalRating}`);
+
+      //Update displayed count and average
+      ratingCountElement.textContent = `${ratingCount}`;
+      averageRatingElement.textContent = `${(totalRating / ratingCount).toFixed(
+        1
+      )}`;
+
+      //Reset form
+      form.reset();
+    } else {
+      alert("Please select a rating before submitting.");
+    }
+  });
+});
+
+//Reset ratings button
+document.getElementById("reset-ratings").addEventListener("click", () => {
+  localStorage.removeItem("ratingCount"); //remove ratingCount from localStorage
+  localStorage.removeItem("totalRating"); //remove totalRating from localStorage
+
+  //Update the interface
+  document.getElementById("rating-count").textContent = "0";
+  document.getElementById("average-rating").textContent = "0";
+
+  alert("Ratings reset");
 });

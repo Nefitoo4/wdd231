@@ -143,6 +143,21 @@
         <div class="car-rating"></div>
         <div class="car-rating"></div>
       </div>
+      <div id="rating-container">
+        <h2>Rate This Page</h2>
+        <form id="rating-form">
+          <label> <input type="radio" name="rating" value="1" />1 </label>
+          <label> <input type="radio" name="rating" value="2" />2 </label>
+          <label> <input type="radio" name="rating" value="3" />3 </label>
+          <label> <input type="radio" name="rating" value="4" />4 </label>
+          <label> <input type="radio" name="rating" value="5" />5 </label>
+          <button id="rateButton" type="submit">Submit Rating</button>
+          <button id="reset-ratings">Reset</button>
+        </form>
+        <p>Total Ratings: <span id="rating-count">0</span></p>
+        <p>Average rating: <span id="average-rating">0</span></p>
+      </div>
+      <br /><br />
     </main>
     <div class="footer-info">
       <div class="website-info">

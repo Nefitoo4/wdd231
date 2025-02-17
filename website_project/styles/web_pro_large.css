@@ -5,10 +5,13 @@
   .car-rating-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   .car-rating {
     flex: 1;
     margin: 10px;
+    min-width: calc(35% - 20px);
+    box-sizing: border-box;
   }
   .car-chart-search-engine {
     display: flex;
