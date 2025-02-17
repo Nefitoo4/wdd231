@@ -31,9 +31,13 @@ fetch("./data/inventory.json")
           <p><strong>Price:</strong>$${car.rent}</p>
           <p><strong>Rating:</strong>${car.rating}</p>
           <label for="pickup-date-${car.id}">Pick-up Date & Time:</label>
-          <input type="datetime-local" id="pickup-date-${car.id}" class="pickup-date" required>
+          <input type="datetime-local" id="pickup-date-${car.id}" class="pickup-date" required><br>
           <label for="return-date-${car.id}">Return Date & Time:</label>
-          <input type="datetime-local" id="return-date-${car.id}" class="return-date" required>
+          <input type="datetime-local" id="return-date-${car.id}" class="return-date" required><br>
+          <label for="email">Email:</label>
+          <input type="email" id="name" name="email" required /><br>
+          <label for="payment">Please introduce a debit card/credit card:</label>
+          <input type="number" id="number" name="number" required /><br><br>
           <p class="total-cost"><strong>Total Cost:</strong> $<span id="total-cost-${car.id}">0</span></p>
           <button class="book">Book</button>
           <button class="cancel">Cancel</button>
@@ -63,7 +67,7 @@ fetch("./data/inventory.json")
           dialog.querySelector("p:nth-of-type(4)").innerText;
         console.log("text price per day:", pricePerDayText);
 
-        // Extraer y convertir el precio correctamente
+        // extract and convert the price rightly
         const pricePerDay = parseFloat(pricePerDayText.replace(/[^\d.-]/g, ""));
         console.log("Price per day:", pricePerDay);
 
