@@ -239,6 +239,15 @@ dialog {
   background-color: rgb(212, 245, 248);
 }
 
+/*membership div container*/
+.membership-div {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 5px;
+  text-align: left;
+}
+
 /*div class main container*/
 .main-container {
   text-align: center;
@@ -284,7 +293,7 @@ dialog {
   background-color: var(--secondary-color);
   align-items: center;
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
 }
 
 /*footer info section*/
