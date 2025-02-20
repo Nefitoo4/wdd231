@@ -1,9 +1,10 @@
 :root {
-  --primary-color: rgb(43, 209, 250);
+  --primary-color: rgb(105, 43, 250);
   --secondary-color: rgb(200, 173, 173);
   --third-color: #000;
   --forth-color: rgb(2, 69, 77);
   --fifth-color: white;
+  --sixth-color: rgb(212, 245, 248);
   --main-font: "Monserrat", serif;
   --secondary-font: "Playwrite AU SA", cursive;
   --third-font: "Quicksand", sans-serif;
@@ -12,7 +13,7 @@
 
 /*header section*/
 header {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   padding: 1rem;
   color: var(--forth-color);
   text-align: center;
@@ -37,7 +38,7 @@ nav a {
   text-decoration: none;
   list-style-type: none;
   text-align: center;
-  background-color: var(--third-color);
+  background-color: var(--forth-color);
   color: var(--fifth-color);
   padding: 1rem;
   flex-grow: 1;
@@ -50,6 +51,7 @@ nav a:hover {
   transform: scale(1.1); /* Increase the size in 110% */
   box-shadow: 0 0 10px;
   text-shadow: 0 0 10px;
+  background-color: var(--third-color);
 }
 
 .menu {
@@ -140,6 +142,7 @@ nav a:hover {
   bottom: 20px;
   left: 50%;
   transform: translate(-50%);
+  font-family: var(--main-font);
 }
 
 .hero-content-btn {
@@ -150,12 +153,14 @@ nav a:hover {
   color: var(--forth-color);
   background-color: rgba(255, 255, 255, 0.85); /*85% opacity*/
   opacity: 1;
+  font-family: var(--main-font);
 }
 
 /*modal*/
 dialog {
-  border: 2px solid var(--forth-color);
+  border: 1px solid var(--forth-color);
   border-radius: 5px;
+  box-shadow: 0 0 20px;
   padding: 10px;
   background-color: var(--secondary-color);
   font-family: var(--main-font);
@@ -199,11 +204,13 @@ dialog {
 }
 
 .car-item {
-  border: 1px solid #ccc;
+  border: 1px solid var(--third-color);
   padding: 10px;
   margin: 20px;
   border-radius: 5px;
   text-align: center;
+  background-color: var(--forth-color);
+  color: var(--fifth-color);
 }
 
 .car-item h3 {
@@ -221,12 +228,15 @@ dialog {
   font-weight: bold;
 }
 .car-item:hover {
-  background-color: rgb(212, 245, 248);
+  background-color: var(--secondary-color);
+  color: var(--forth-color);
 }
 
 /*div class car-rating*/
 .car-rating {
-  border: 1px solid #ccc;
+  border: 1px solid var(--third-color);
+  background-color: var(--forth-color);
+  color: var(--fifth-color);
   padding: 10px;
   margin: 20px;
   border-radius: 5px;
@@ -235,14 +245,17 @@ dialog {
 
 .car-rating h3 {
   margin: 10px 0;
+  font-family: var(--secondary-font);
 }
 
 .car-rating p {
   margin: 5px 0;
+  font-family: var(--main-font);
 }
 
 .car-rating:hover {
-  background-color: rgb(212, 245, 248);
+  background-color: var(--secondary-color);
+  color: var(--forth-color);
 }
 
 /*membership div container*/
@@ -259,14 +272,14 @@ dialog {
   text-align: center;
   margin: 20px;
   padding: 20px;
-  font-family: "Lucida Sans", "Lucida Sans Regular";
+  font-family: var(--main-font);
 }
 
 .title {
   background-color: var(--secondary-color);
   font-weight: bold;
   padding: 10px;
-  font-family: "Lucida Sans", "Lucida Sans Regular";
+  font-family: var(--secondary-font);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -287,8 +300,8 @@ dialog {
   gap: 50px;
   text-align: center;
   justify-content: center;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: palevioletred;
+  font-family: var(--third-font);
+  color: var(--forth-color);
   font-weight: 600;
 }
 
@@ -296,7 +309,7 @@ dialog {
 #form {
   margin: 10px;
   padding: 10px;
-  background-color: var(--secondary-color);
+  background-color: var(--forth-color);
   align-items: center;
   width: 100%;
   max-width: 400px;
@@ -316,9 +329,12 @@ dialog {
   max-width: 400px;
   margin: auto;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--forth-color);
   border-radius: 10px;
   text-align: center;
+  font-family: var(--secondary-font);
+  background-color: var(--forth-color);
+  color: var(--fifth-color);
 }
 
 #rating-form label {
@@ -338,8 +354,8 @@ dialog {
 }
 
 #rateButton:hover {
-  background-color: var(--Text-color);
-  color: #000;
+  background-color: var(--secondary-color);
+  color: var(--forth-color);
 }
 
 #reset-ratings {
@@ -375,9 +391,9 @@ dialog {
 .footer-info a {
   text-decoration: none;
   color: var(--fifth-color);
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: var(--third-font);
   font-size: large;
+  font-weight: bold;
 }
 
 .social-media {
@@ -386,15 +402,16 @@ dialog {
 
 /*footer section*/
 footer {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: var(--third-color);
   text-align: center;
   align-items: center;
   display: flex;
   justify-content: center;
+  font-family: var(--main-font);
 }
 
 #lastModified {
-  color: blue;
+  color: var(--forth-color);
   font-weight: bold;
 }
