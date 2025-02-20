@@ -134,6 +134,8 @@ nav a:hover {
   background-color: rgba(255, 255, 255, 0.85); /*85% opacity*/
   border-radius: 20px;
   padding: 10px;
+  color: var(--third-color);
+  font-family: var(--main-font);
 }
 
 .buttons {
@@ -273,6 +275,7 @@ dialog {
   margin: 20px;
   padding: 20px;
   font-family: var(--main-font);
+  color: var(--fifth-color);
 }
 
 .title {
@@ -282,6 +285,7 @@ dialog {
   font-family: var(--secondary-font);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  color: var(--fifth-color);
 }
 
 .information {
@@ -301,7 +305,8 @@ dialog {
   text-align: center;
   justify-content: center;
   font-family: var(--third-font);
-  color: var(--forth-color);
+  color: var(--fifth-color);
+  background-color: var(--forth-color);
   font-weight: 600;
 }
 
