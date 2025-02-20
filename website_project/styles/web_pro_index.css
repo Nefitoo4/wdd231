@@ -1,11 +1,12 @@
 :root {
-  --primary-color: rgb(0, 217, 255);
+  --primary-color: rgb(43, 209, 250);
   --secondary-color: rgb(200, 173, 173);
   --third-color: #000;
-  --forth-color: rgb(3, 101, 112);
+  --forth-color: rgb(2, 69, 77);
   --fifth-color: white;
-  --main-font: "Monserrat", sans-serif;
+  --main-font: "Monserrat", serif;
   --secondary-font: "Playwrite AU SA", cursive;
+  --third-font: "Quicksand", sans-serif;
   --medium-size: medium;
 }
 
@@ -13,7 +14,7 @@
 header {
   background-color: var(--primary-color);
   padding: 1rem;
-  color: var(--third-color);
+  color: var(--forth-color);
   text-align: center;
   font-family: var(--secondary-font);
   font-weight: bolder;
@@ -21,7 +22,8 @@ header {
 
 .title-h2 {
   color: var(--forth-color);
-  font-weight: bold;
+  font-family: var(--third-font);
+  font-weight: bolder;
 }
 
 /*navigation and hamburger menu**/
@@ -40,6 +42,8 @@ nav a {
   padding: 1rem;
   flex-grow: 1;
   transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  font-family: var(--main-font);
+  font-weight: bold;
 }
 
 nav a:hover {
@@ -204,10 +208,12 @@ dialog {
 
 .car-item h3 {
   margin: 10px 0;
+  font-family: var(--secondary-font);
 }
 
 .car-item p {
   margin: 5px 0;
+  font-family: var(--main-font);
 }
 
 .result {
@@ -355,7 +361,7 @@ dialog {
 
 /*footer info section*/
 .footer-info {
-  background-color: gray;
+  background-color: var(--forth-color);
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -389,6 +395,6 @@ footer {
 }
 
 #lastModified {
-  color: green;
+  color: blue;
   font-weight: bold;
 }
