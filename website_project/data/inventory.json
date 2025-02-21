@@ -118,5 +118,35 @@
     "rent": "50.67",
     "rating": "4.1",
     "img": "./images/ford_escape.webp"
+  },
+  {
+    "type": "SUV",
+    "model": "Nissan Rouge",
+    "year": "2024",
+    "transmission": "automatic",
+    "capacity": "6",
+    "rent": "65.37",
+    "rating": "4.4",
+    "img": "./images/nissan-rouge.webp"
+  },
+  {
+    "type": "Sedan",
+    "model": "Mitsubishi Lancer",
+    "year": "2020",
+    "transmission": "standard",
+    "capacity": "5",
+    "rent": "35.80",
+    "rating": "3.8",
+    "img": "./images/mitsubishi_lancer.webp"
+  },
+  {
+    "type": "Hatchback Economic",
+    "model": "Mitsubishi Mirage",
+    "year": "2021",
+    "transmission": "automatic",
+    "capacity": "5",
+    "rent": "25.10",
+    "rating": "3.4",
+    "img": "./images/mitsubishi-mirage.webp"
   }
 ]
