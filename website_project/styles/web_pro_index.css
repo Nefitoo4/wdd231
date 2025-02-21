@@ -294,11 +294,10 @@ dialog {
   margin: 20px;
   padding: 20px;
   font-family: var(--main-font);
-  color: var(--fifth-color);
 }
 
 .title {
-  background-color: var(--secondary-color);
+  background-color: var(--forth-color);
   font-weight: bold;
   padding: 10px;
   font-family: var(--secondary-font);
@@ -308,11 +307,12 @@ dialog {
 }
 
 .information {
-  border: 2px solid var(--secondary-color);
+  border: 2px solid var(--forth-color);
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
   padding: 10px;
   margin: 0;
+  font-family: var(--secondary-font);
 }
 
 /*wireframe section*/
