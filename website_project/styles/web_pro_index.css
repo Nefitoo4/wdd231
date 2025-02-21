@@ -262,11 +262,30 @@ dialog {
 
 /*membership div container*/
 .membership-div {
-  border: 1px solid #ccc;
+  border: 4px solid #ccc;
   padding: 10px;
   margin: 20px;
   border-radius: 5px;
   text-align: left;
+  animation: change-color 10s infinite;
+}
+
+@keyframes change-color {
+  0% {
+    background-color: white;
+  }
+  25% {
+    background-color: lightblue;
+  }
+  50% {
+    background-color: lightgreen;
+  }
+  75% {
+    background-color: lightyellow;
+  }
+  100% {
+    background-color: white;
+  }
 }
 
 /*div class main container*/
@@ -314,10 +333,11 @@ dialog {
 #form {
   margin: 10px;
   padding: 10px;
-  background-color: var(--forth-color);
+  background-color: var(--secondary-color);
   align-items: center;
   width: 100%;
   max-width: 400px;
+  font-family: var(--third-font);
 }
 
 #enrollment {
